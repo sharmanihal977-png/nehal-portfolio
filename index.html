@@ -38,29 +38,47 @@
 
     <!-- Hero Section -->
 
-    <section class="hero" id="home">
+  <section class="hero" id="home">
 
-        <div class="hero-left">
-            <h1>Hi, I'm <span>Nehal Sharma</span></h1>
+    <div class="hero-left">
 
-            <h2>I am a <span id="element"></span></h2>
+        <p class="hero-tag">WELCOME TO MY PORTFOLIO</p>
 
-            <p>
-                Passionate B.Tech CSE student focused on Web Development,
-                Frontend Design, and AI.
-            </p>
+        <h1>
+            Hi, I'm <span>Nehal Sharma</span>
+        </h1>
 
-            <div class="buttons">
-                <a href="Nehal resume.pdf" download class="btn">Download Resume</a>
-                <a href="#contact" class="btn">Hire Me</a>
-            </div>
+        <h2>
+            Creative <span id="element"></span>
+        </h2>
+
+        <p>
+            Passionate B.Tech CSE student focused on
+            Frontend Development, Modern UI Design,
+            and AI-powered applications.
+        </p>
+
+        <div class="buttons">
+            <a href="Nehal resume.pdf" download class="btn">
+                Download Resume
+            </a>
+
+            <a href="#projects" class="btn btn2">
+                View Projects
+            </a>
         </div>
 
-        <div class="hero-right">
-            <img src="web.png" alt="Developer">
-        </div>
+    </div>
 
-    </section>
+    <div class="hero-right">
+
+        <div class="circle"></div>
+
+        <img src="web.png" alt="Developer">
+
+    </div>
+
+</section>
 
     <!-- About -->
 
@@ -219,33 +237,33 @@
 </section>
     <!-- Contact -->
 
-    <section id="contact">
+  <section id="contact">
 
-        <div class="section-title">
-            <h2>Contact Me</h2>
-            <p>Let's connect together</p>
-        </div>
+    <div class="section-title">
+        <h2>Contact Me</h2>
+        <p>Let's connect together</p>
+    </div>
 
-        <div class="contact-container">
+    <div class="contact-container">
 
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                Email: sharmanihal977@gmail.com
-            </p>
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            sharmanihal977@gmail.com
+        </p>
 
-            <p>
-                <i class="fa-solid fa-phone"></i>
-                Phone: +91 9128129373
-            </p>
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            +91 9128129373
+        </p>
 
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Jamshedpur, India
-            </p>
+        <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Jamshedpur, India
+        </p>
 
-        </div>
+    </div>
 
-    </section>
+</section>
 
     <!-- Footer -->
 
@@ -270,6 +288,64 @@
             loop: true
         });
     </script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+    ScrollReveal().reveal('.hero-left', {
+        delay: 200,
+        distance: '50px',
+        origin: 'left'
+    });
+
+    ScrollReveal().reveal('.hero-right', {
+        delay: 400,
+        distance: '50px',
+        origin: 'right'
+    });
+
+    ScrollReveal().reveal('.skill-card', {
+        interval: 200
+    });
+
+    ScrollReveal().reveal('.project-card', {
+        interval: 200
+    });
+</script>
+<div class="particles"></div>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+
+ScrollReveal({
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.hero-left', {
+    origin: 'left'
+});
+
+ScrollReveal().reveal('.hero-right', {
+    origin: 'right'
+});
+
+ScrollReveal().reveal('.skill-card', {
+    interval: 200
+});
+
+ScrollReveal().reveal('.project-card', {
+    interval: 200
+});
+
+ScrollReveal().reveal('.about-img', {
+    origin: 'left'
+});
+
+ScrollReveal().reveal('.about-content', {
+    origin: 'right'
+});
+
+</script>
 
 </body>
 
